@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suit jari</title>
+</head>
+
+<body>
+    <section style="display: flex;gap: 3px;">
+        <div>
+            <p>Kamu</p>
+            <input type="text" disabled id="outputUserJari">
+        </div>
+        <div>
+            <p>Lawan</p>
+            <input type="text" disabled id="outputLawanJari">
+        </div>
+        <div>
+            <div>
+                <button id="jempol" onclick="suitJariUser(event)" value = "jempol">Jempol</button>
+            </div>
+            <div>
+                <button id="telunjuk" onclick="suitJariUser(event)" value = "telunjuk">Telunjuk</button>
+            </div>
+            <div>
+                <button id="kelingking" onclick="suitJariUser(event)" value = "kelingking">Kelingking</button>
+            </div>
+        </div>
+        <p id="result" >Pemenang :</p>
+        <script src="./script.js"></script>
+    </section>
+</body>
+
+</html>
