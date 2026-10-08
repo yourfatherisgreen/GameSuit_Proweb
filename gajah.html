@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suit gajah</title>
+    <title>Suit Gajah</title>
+        <link rel ="stylesheet" href="./js/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
+    <div class="container text-center game-container">
+        <h2 class="mb-4">Game Suit Gajah</h2>
+        <div class="row mb-4">
+            <div class="col">
+                <label class="fw-bold">Kamu</label>
+                <input type="text" class="form-control text-center mx-auto w-75 mt-2" disabled id="outputUserGajah">
+            </div>
+            <div class="col">
+                <label class="fw-bold">Lawan</label>
+                <input type="text" class="form-control text-center mx-auto w-75 mt-2" disabled id="outputLawanGajah">
+            </div>
+        </div>
+        <div class="d-flex justify-content-center gap-2 mb-4">
+            <button class="btn btn-custom-blue px-4" id="gajah" onclick="suitGajahUser(event)" value="gajah">Gajah</button>
+            <button class="btn btn-custom-orange px-4" id="orang" onclick="suitGajahUser(event)" value="orang">Orang</button>
+            <button class="btn btn-custom-blue px-4" id="semut" onclick="suitGajahUser(event)" value="semut">Semut</button>
+        </div>
+        <h3 id="result" class="text-dark-custom mb-4">Hasil :</h3>
+        <h4 id="score" class="text-dark-custom fw-semibold">Skor: Seri: 0, Menang: 0, Kalah: 0</h4>
+        <a href="./index.html" class="btn btn-secondary">Kembali ke Menu</a>
+    </div>
     <script src="./script.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

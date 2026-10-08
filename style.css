@@ -1,0 +1,53 @@
+/* Color Guide: 
+   #F5EBDD - background
+   #F2765E - orange/coral
+   #315B8C - blue
+   #413333 - dark brown text
+*/
+
+body {
+    background-color: #F5EBDD;
+    color: #413333;
+    font-family: Arial, sans-serif;
+}
+
+.menu-box {
+    background-color: white;
+    border: 3px solid #315B8C;
+}
+
+.game-container {
+    background-color: white;
+    border: 3px solid #F2765E;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 10vh;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 600px;
+}
+
+.btn-custom-blue {
+    background-color: #315B8C;
+    color: white;
+    border: none;
+}
+
+.btn-custom-blue:hover {
+    background-color: #413333;
+    color: white;
+}
+
+.btn-custom-orange {
+    background-color: #F2765E;
+    color: white;
+    border: none;
+}
+
+.btn-custom-orange:hover {
+    background-color: #413333;
+    color: white;
+}
+
+.text-dark-custom {
+    color: #413333;
+}

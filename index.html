@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suit game</title>
+    <title>Suit Game Menu</title>
+    <!-- Bootstrap CSS -->
+    <link rel ="stylesheet" href="./js/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-    <section style="display: flex;gap: 3px;">
-        <div>
-            <a href="./batuta.html"><button type="button">Batu gunting kertas</button></a>
+<body class="d-flex align-items-center vh-100">
+    <div class="container text-center menu-box p-5 rounded shadow">
+        <h1 class="mb-4">Pilih Game Suit</h1>
+        <div class="d-grid gap-3 col-md-5 mx-auto">
+            <a href="./batuta.html" class="btn btn-custom-blue btn-lg">Batu Gunting Kertas</a>
+            <a href="./gajah.html" class="btn btn-custom-orange btn-lg">Suit Gajah</a>
+            <a href="./jari.html" class="btn btn-custom-blue btn-lg">Suit Jari</a>
         </div>
-        <div>
-           <a href="./gajah.html"><button type="button">Suit gajah</button></a>
-        </div>
-        <div>
-            <a href="./jari.html"><button type="button">suit jari</button></a>
-        </div>
-    </section>
-    <script src="./script.js"></script>
+    </div>
 </body>
+<script src="./js/bootstrap.bundle.min.js"></script>
 </html>

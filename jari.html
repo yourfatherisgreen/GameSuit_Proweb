@@ -4,33 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suit jari</title>
+    <title>Suit Jari</title>
+    <link rel ="stylesheet" href="./js/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <section style="display: flex;gap: 3px;">
-        <div>
-            <p>Kamu</p>
-            <input type="text" disabled id="outputUserJari">
-        </div>
-        <div>
-            <p>Lawan</p>
-            <input type="text" disabled id="outputLawanJari">
-        </div>
-        <div>
-            <div>
-                <button id="jempol" onclick="suitJariUser(event)" value = "jempol">Jempol</button>
+    <div class="container text-center game-container">
+        <h2 class="mb-4">Game Suit Jari</h2>
+        <div class="row mb-4">
+            <div class="col">
+                <label class="fw-bold">Kamu</label>
+                <input type="text" class="form-control text-center mx-auto w-75 mt-2" disabled id="outputUserJari">
             </div>
-            <div>
-                <button id="telunjuk" onclick="suitJariUser(event)" value = "telunjuk">Telunjuk</button>
-            </div>
-            <div>
-                <button id="kelingking" onclick="suitJariUser(event)" value = "kelingking">Kelingking</button>
+            <div class="col">
+                <label class="fw-bold">Lawan</label>
+                <input type="text" class="form-control text-center mx-auto w-75 mt-2" disabled id="outputLawanJari">
             </div>
         </div>
-        <p id="result" >Pemenang :</p>
-        <script src="./script.js"></script>
-    </section>
+        <div class="d-flex justify-content-center gap-2 mb-4">
+            <button class="btn btn-custom-blue px-4" id="jempol" onclick="suitJariUser(event)" value="jempol">Jempol</button>
+            <button class="btn btn-custom-orange px-4" id="telunjuk" onclick="suitJariUser(event)" value="telunjuk">Telunjuk</button>
+            <button class="btn btn-custom-blue px-4" id="kelingking" onclick="suitJariUser(event)" value="kelingking">Kelingking</button>
+        </div>
+        <h3 id="result" class="text-dark-custom mb-4">Hasil :</h3>
+        <h4 id="score" class="text-dark-custom fw-semibold">Skor: Seri: 0, Menang: 0, Kalah: 0</h4>
+        <a href="./index.html" class="btn btn-secondary">Kembali ke Menu</a>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
